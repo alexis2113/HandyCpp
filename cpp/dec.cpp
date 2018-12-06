@@ -4,7 +4,7 @@ using namespace Rcpp;
 
 //[[Rcpp::depends(RcppArmadillo)]]
 // [[Rcpp::export]]
-double glsp(arma::vec cof,arma::mat x,arma::vec y) {
+double C_poi(arma::vec cof,arma::mat x,arma::vec y) {
  
  arma::vec fit = x*cof;
  arma::vec lam = exp(fit);
